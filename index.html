@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For mammam ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- OVERLAY / START -->
+  <div id="overlay">
+    <h1>Hey mammam 🧸💖</h1>
+    <p>I made something special for us</p>
+    <button id="startBtn">Click to Start 💗</button>
+  </div>
+
+  <!-- THREE.JS BACKGROUND -->
+  <canvas id="threeCanvas"></canvas>
+
+  <!-- PAGE 1 : MEMORY -->
+  <div id="memoryPage" class="page">
+
+    <div class="content">
+      <img src="assets/photo1.jpg" />
+      <p>This moment means everything to me 💖</p>
+
+      <img src="assets/photo2.jpg" />
+      <p>You are my comfort, my home 🧸</p>
+
+      <img src="assets/photo3.jpg" />
+      <p>Forever grateful for you ✨</p>
+
+      <button id="toTextPage">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2 : BIG TEXT -->
+  <div id="textPage" class="page">
+    <div class="content">
+      <h1>
+        You are not just my Valentine…<br />
+        You are my forever 💖
+      </h1>
+      <button id="toMusicPage">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- PAGE 3 : MUSIC -->
+  <div id="musicPage" class="page">
+    <div class="content">
+      <h2>Tap to play this for us 🎶</h2>
+      <button id="playMusic">▶ Play</button>
+      <button id="toFinalPage">Next ➡️</button>
+    </div>
+  </div>
+
+  <!-- PAGE 4 : FINAL LETTER -->
+  <div id="finalPage" class="page">
+    <div class="content">
+      <h2>For my mammam 🧸💖</h2>
+      <p id="loveLetter" style="display:none;">
+  From the day you came into my life,<br />
+  everything felt warmer, softer, happier.<br />
+  This little world is for you… always.
+</p>
+
+
+      <div class="photo-grid">
+        <img src="assets/photo1.jpg" />
+        <img src="assets/photo2.jpg" />
+        <img src="assets/photo3.jpg" />
+        <img src="assets/photo4.jpg" />
+      </div>
+
+      <p class="memory-text">
+        Every photo holds a piece of my heart 💕
+      </p>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" src="assets/music.mp3" loop></audio>
+  <audio id="specialMusic" src="assets/her-music.mp3"></audio>
+
+  <!-- LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <!-- SCRIPTS -->
+  <script src="threeScene.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
